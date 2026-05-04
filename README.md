@@ -9,12 +9,12 @@
 1. **图片下载** – 使用 [QQ空间导出助手](https://github.com/ShunCai/QZoneExport) 抓取图片。
 2. **OCR 识别** – [PaddleOCR](https://github.com/PaddlePaddle/PaddleOCR) 提取文字，多线程并行处理（`parse_image.py`）。
 3. **文本清洗** – 去除 UI 垃圾、修正 OCR 黑话、过滤无效内容（`clean_jsonl.py`）。
-4. **特征提取** – 调用 DeepSeek V4 Flash 大模型解析帖子，提取发帖人/目标对象班级、学部、匿名状态、目的、情感等字段（`extract_feature.py`）。
+4. **特征提取** – 调用[硅基流动](https://cloud.siliconflow.cn/) DeepSeek V4 Flash 大模型解析帖子，提取发帖人/目标对象班级、学部、匿名状态、目的、情感等字段（`extract_feature.py`）。
 5. **数据分析** – Jupyter Notebook 完成统计与可视化，输出图表与词云。
 
 ## 仓库结构
 
-**受Jupyter Notebook 环境要求与Paddle OCR推荐Python版本不一致影响，数据分析Notebook的环境与项目其他文件的环境不一致**
+> **受Jupyter Notebook 环境要求与Paddle OCR推荐Python版本不一致影响，数据分析Notebook的环境与项目其他文件的环境不一致**
 
 ```
 .
@@ -38,7 +38,7 @@
 
 ### 环境配置
 
-推荐 Python 3.9，安装依赖：
+项目数据分析以外部分推荐使用 Python 3.9，数据分析部分使用3.10+，安装对应依赖：
 ```bash
 pip install -r requirements.txt
 ```
@@ -89,9 +89,15 @@ OCR 需要单独安装 PaddlePaddle 和 PaddleOCR，请参考 [官方文档](htt
 - 代码部分由 AI 辅助生成，结构不规范。
 - 项目仅反映单个学校表白墙的数据，不具备普遍性。
 
+## 致谢
+感谢硅基流动赠送的27元优惠券
+感谢DeepSeek开源了V4 Flash 与 Pro模型
+感谢QQ空间导出助手的作者
+感谢我自己
+  
+谴责网页版千问
+谴责Gemini 3.1 Pro
+
 ## License
 
-本项目代码采用 [MIT License](LICENSE)。数据部分仅限于学术研究，不得用于商业用途。
-```
-
-可以根据需要调整细节，例如 `requirements.txt` 是否已存在、目录结构是否完全一致等。
+本项目代码采用 [MIT License](LICENSE)。数据部分仅限于学术研究。
