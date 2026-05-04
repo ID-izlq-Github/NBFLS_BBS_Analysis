@@ -14,7 +14,7 @@
 
 ## 仓库结构
 
-> **受Jupyter Notebook 环境要求与Paddle OCR推荐Python版本不一致影响，数据分析Notebook的环境与项目其他文件的环境不一致**
+> **受Jupyter Notebook 环境要求与Paddle OCR推荐Python版本不一致影响，数据分析Notebook的环境与项目其他文件的环境不同**
 
 ```
 .
@@ -90,13 +90,13 @@ OCR 需要单独安装 PaddlePaddle 和 PaddleOCR，请参考 [官方文档](htt
 - 项目仅反映单个学校表白墙的数据，不具备普遍性。
 
 ## 致谢
-感谢硅基流动赠送的27元优惠券
-感谢DeepSeek开源了V4 Flash 与 Pro模型
-感谢QQ空间导出助手的作者
-感谢我自己
+感谢硅基流动赠送的27元优惠券  
+感谢DeepSeek开源了V4 Flash 与 Pro模型  
+感谢QQ空间导出助手的作者  
+感谢我自己  
   
-谴责网页版千问
-谴责Gemini 3.1 Pro
+谴责网页版千问  
+谴责Gemini 3.1 Pro  
 
 ## License
 
