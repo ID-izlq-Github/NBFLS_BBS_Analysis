@@ -2,3 +2,4 @@
 src/test/
 */*.log
 data/text/*
+data/raw_image
