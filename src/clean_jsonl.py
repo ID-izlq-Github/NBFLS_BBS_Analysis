@@ -207,8 +207,8 @@ def process_record(record: Dict) -> Optional[Dict]:
 
 def main():
     data_dir = "/home/z-lq/personal_projects/project_nbfls_bbs/data/"
-    input_path = os.path.join(data_dir, "raw_text/ocr_result.jsonl")
-    output_dir = os.path.join(data_dir, "processed_text")
+    input_path = os.path.join(data_dir, "text/ocr_result.jsonl")
+    output_dir = os.path.join(data_dir, "text")
     os.makedirs(output_dir, exist_ok=True)
     output_path = os.path.join(output_dir, "processed_v2.jsonl")
 
